@@ -1,0 +1,103 @@
+:root {
+  --author: "Matt Cannon";
+  --contact: "mc@mattcannon.design";
+  --description: "A conceputal version of an AI-powered to-do list generator that helps you plan your day efficiently in a simple format.";
+  --keywords: "codepenchallenge, cpc-todo-list, AI, to-do generator, task planner, todo-list, productivity";
+  --last-modified: "2024-09-23";
+  --content-language: "en";
+  --generator: "HTML5, CSS3, JavaScript, Tailwind CSS";
+  --title: "AI To-Do Generator";
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+}
+.task-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9fafb;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: grab;
+  text-align: left;
+  width: 100%;
+}
+.task-item.dragging {
+  opacity: 0.5;
+}
+.checkbox {
+  margin-right: 10px;
+}
+.header-bar {
+  background-color: #385263;
+  padding: 8px 15px;
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-bar i {
+  margin-right: 10px;
+}
+
+.pill-button {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  padding: 12px 24px;
+  background-color: #385263;
+  color: white;
+  font-size: 1rem;
+  border: 2px solid white;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pill-button:hover {
+  background-color: #4a6b81;
+}
+
+.pill-button i {
+  margin-right: 8px;
+}
+
+#titleBar {
+  display: none;
+}
+
+textarea {
+  width: 100%;
+  max-width: 80%;
+  margin-left: 65px;
+  font-size: 12px;
+  resize: none;
+  height: 175px;
+}
+
+#scheduleContainer {
+  width: 100%;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+#messageInput {
+  font-size: 16px;
+}
+.fa,
+.fas {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
